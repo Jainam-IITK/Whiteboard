@@ -25,17 +25,19 @@
         id =  callDoc.id;
     })
 
-  </script>
+  </script> 
   
 
  
 
 
   <div class="container">
+    
     <div>
       <VideoSetup bind:arePermissionsGranted = {arePermissionsGranted} />
     </div>
     <br>
+    
     <div>
       {#if id != null}
       <a href= {`/${id}`}  use:link>
@@ -45,9 +47,9 @@
       <p>Loading...</p>
       {/if}
     </div>
+
     <div>
       <Toast/>
-
     </div>
 
 
